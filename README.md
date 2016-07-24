@@ -8,7 +8,6 @@ npm install -D gulp-stylus gulp-plumber gulp-concat gulp-autoprefixer gulp-minif
 
 ## want
 
-browsersync
-bootstrap
-
-vue
+* browsersync
+* bootstrap
+* vue
