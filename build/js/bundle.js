@@ -64,7 +64,7 @@
 	function Hello() {
 	    'use strict';
 
-	    this.message = 'Hello!!?';
+	    this.message = 'Hello!?';
 	}
 
 	module.exports = Hello;
