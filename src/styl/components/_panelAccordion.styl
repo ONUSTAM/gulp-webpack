@@ -1,0 +1,55 @@
+.panel-accordion
+  border-radius: 0
+
+  .list-inline
+    margin-bottom 0
+
+.panel-transf
+  border-radius 0
+  padding 0
+  overflow hidden
+  // border 1px solid #ddd
+  &.closed
+    border solid 1px #ddd
+
+  .button__box
+    width 100px
+
+  .table
+    margin-bottom 0
+
+    &.closed
+      border none
+
+      p
+        display inline
+
+      tr
+        display inline
+        th, td
+          border none
+          background-color transparent
+
+        td
+          position: relative;
+          padding-right 8px
+          &:after
+            content ', '
+            display inline
+            position absolute;
+            right 0
+            bottom 0
+
+        &.abber
+          display none
+
+          td
+            &:after
+              content ', '
+              display none
+
+        &:first-child
+          display table-row
+          th
+            background-color #eee
+            width 100px

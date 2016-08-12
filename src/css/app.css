@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script|Special+Elite|Racing+Sans+One|Concert+One|Share+Tech+Mono|Averia+Serif+Libre");
+html,
+body {
+  padding: 0;
+}
+.oleoscript {
+  font-family: 'Oleo Script', cursive;
+}
+.specialelite {
+  font-family: 'Special Elite', cursive;
+}
+.racingsans {
+  font-family: 'Racing Sans One', cursive;
+}
+.concertone {
+  font-family: 'Concert One', cursive;
+}
+.sharetech {
+  font-family: 'Share Tech Mono';
+}
+.averiaserif {
+  font-family: 'Averia Serif Libre', cursive;
+}
+.menloregular {
+  font-family: 'menlo-regular';
+}
+hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+p {
+  margin: 0 0 4px;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+  font-size: 11px;
+  line-height: 1;
+  padding: 5px 10px;
+}
+.nav.nav-pills.sortBar {
+  padding: 4px;
+  background-color: #eee;
+}
+.navbar {
+  border: 1px solid transparent;
+  position: relative;
+  min-height: 25px;
+  margin-bottom: 0;
+}
+.navbar-brand {
+  float: left;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 4px 5px;
+  height: 25px;
+}
+.nav-tabs > li.active a:hover,
+.nav-tabs > li.active a:focus {
+  border-radius: 0;
+}
+.nav-tabs > li > a:hover {
+  border-radius: 0;
+}
+.row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.form-control {
+  border-radius: 3px;
+  display: block;
+  font-size: 12px;
+  padding: 4px 5px;
+  height: 28px;
+  width: 100%;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.06);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.datepicker {
+  border-radius: 3px;
+}
+select.form-control {
+  height: 28px;
+  border-radius: 2px !important;
+}
+.form-control {
+  border-radius: 1px;
+}
+.btn {
+  border-radius: 1px;
+  padding: 3px 5px;
+}
+.btn.ss {
+  background-image: none;
+  font-weight: normal;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.radio,
+.checkbox {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.radio input[type="radio"],
+.checkbox input[type="radio"],
+.radio input[type="checkbox"],
+.checkbox input[type="checkbox"] {
+  margin-left: -16px;
+  margin-top: 2px;
+}
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  padding: 4px;
+}
+.table tr > th {
+  background-color: #eee;
+  color: #444;
+}
+.table .list-inline {
+  margin-bottom: 0;
+}
+.panel {
+  margin-bottom: 8px;
+}
+.panel .panel-heading {
+  padding: 4px 8px;
+}
+.panel .panel-body {
+  padding: 8px 8px 4px;
+}
+.panel .panel-footer {
+  padding: 8px 8px 4px;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 12px;
+  -webkit-appearance: none;
+}
+.red {
+  color: #f00;
+}
+@media print {
+  .pn {
+    display: none !important;
+  }
+  .pb {
+    display: block !important;
+  }
+  .poi {
+    overflow-y: inherit !important;
+  }
+}
+.addList.nos ul:first-child .buttonDel {
+  display: none;
+}
+.btn.red:hover {
+  color: #ff0d0d;
+}
+.inputDateLt {
+  border: solid 1px #ccc;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  display: inline-block;
+  padding: 2px;
+}
+.inputDateLt input {
+  border: none;
+  padding-right: 2px;
+  text-align: right;
+}
+.inputDateLt input:focus {
+  outline: none;
+}
+.inputDateLt input.yr {
+  width: 40px;
+}
+.inputDateLt input.mn {
+  width: 20px;
+}
+.inputDateLt input.dy {
+  width: 20px;
+}
+.table td.red a {
+  color: #f00;
+}
+.table td.blk {
+  color: #000;
+}
+.table td.blk a {
+  color: #000;
+}
+.panel-list-link p {
+  margin-bottom: 4px;
+}
+.panel-list-link ul {
+  list-style: none;
+  padding-left: 0;
+}
+.panel-list-link ul li {
+  padding-left: 8px;
+}
+.panel-list-link ul li a {
+  display: block;
+}
+.panel-accordion {
+  border-radius: 0;
+}
+.panel-accordion .list-inline {
+  margin-bottom: 0;
+}
+.panel-transf {
+  border-radius: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.panel-transf.closed {
+  border: solid 1px #ddd;
+}
+.panel-transf .button__box {
+  width: 100px;
+}
+.panel-transf .table {
+  margin-bottom: 0;
+}
+.panel-transf .table.closed {
+  border: none;
+}
+.panel-transf .table.closed p {
+  display: inline;
+}
+.panel-transf .table.closed tr {
+  display: inline;
+}
+.panel-transf .table.closed tr th,
+.panel-transf .table.closed tr td {
+  border: none;
+  background-color: transparent;
+}
+.panel-transf .table.closed tr td {
+  position: relative;
+  padding-right: 8px;
+}
+.panel-transf .table.closed tr td:after {
+  content: ', ';
+  display: inline;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.panel-transf .table.closed tr.abber {
+  display: none;
+}
+.panel-transf .table.closed tr.abber td:after {
+  content: ', ';
+  display: none;
+}
+.panel-transf .table.closed tr:first-child {
+  display: table-row;
+}
+.panel-transf .table.closed tr:first-child th {
+  background-color: #eee;
+  width: 100px;
+}
+.modal .modal-dialog .modal-content .modal-header,
+.modal .modal-dialog .modal-content  .modal-body,
+.modal .modal-dialog .modal-content  .modal-footer {
+  padding: 8px;
+}
+.split-layout {
+  padding-top: 44px;
+  overflow: hidden;
+}
+.split-layout.header {
+  margin-bottom: 0;
+  padding: 4px;
+  position: absolute;
+  overflow: inherit;
+  top: 0;
+  height: 44px;
+  width: 100%;
+}
+.split-layout.header .logo {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.split-layout.header .logo img {
+  height: 36px;
+}
+.split-layout.footer,
+.split-layout.container-fulid {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+.split-layout.footer > div,
+.split-layout.container-fulid > div {
+  display: table-cell;
+  vertical-align: top;
+}
+.split-layout.footer > div.plL .panel,
+.split-layout.container-fulid > div.plL .panel,
+.split-layout.footer > div.plR .panel,
+.split-layout.container-fulid > div.plR .panel {
+  opacity: 1;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  transition: all 0.2s;
+}
+.split-layout.footer > div.plL .panel .panel-body,
+.split-layout.container-fulid > div.plL .panel .panel-body,
+.split-layout.footer > div.plR .panel .panel-body,
+.split-layout.container-fulid > div.plR .panel .panel-body {
+  padding: 8px 8px 4px;
+}
+.split-layout.footer > div.plL,
+.split-layout.container-fulid > div.plL {
+  width: 160px;
+}
+.split-layout.footer > div.plR,
+.split-layout.container-fulid > div.plR {
+  width: 180px;
+}
+.split-layout.footer > div.plC,
+.split-layout.container-fulid > div.plC {
+  height: 100%;
+}
+.split-layout.footer > div.plC >.panel >.panel-footer,
+.split-layout.container-fulid > div.plC >.panel >.panel-footer {
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+}
+.panel.login .panel-body p {
+  padding: 8px 4px;
+}

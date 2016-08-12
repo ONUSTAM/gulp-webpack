@@ -22,7 +22,7 @@ module.exports = {
   webpack: {
     entry: src + '/js/app.js',
     output: {
-      filename: 'bundle.js'
+      filename: 'app.js'
     },
     resolve: {
       extensions: ['', '.js']
@@ -69,19 +69,11 @@ module.exports = {
   },
 
   // 追記部分
-  copy: {
-    src: [   // 今後ただコピーするファイルが増えそうなので配列にしておく
-      src + '/www/index.html'
-    ],
-    dest: dest
-  },
-
-  // 追記部分
   stylus: {
     src: [  // もし外部のcssフレームワーク使うなら配列の先頭で読み込むと良い
       src + '/styl/**/!(_)*'  // ファイル名の先頭がアンスコはビルド対象外にする
     ],
-    dest: dest + '/css/',
+    dest: src + '/css/',
     output: 'app.css',  // 出力ファイル名
     autoprefixer: {
       browsers: ['last 2 versions']
@@ -89,10 +81,22 @@ module.exports = {
     minify: false
   },
 
+  // 追記部分
+  copy: {
+    src: [   // 今後ただコピーするファイルが増えそうなので配列にしておく
+      src + '/favicon.ico',
+      // src + '/www/index.html',
+      // src + '/www/3.html',
+      // src + '/www/7.html'
+      src + '/www/**'
+    ],
+    dest: dest
+  },
+
   watch: {
     js: relativeSrcPath + '/js/**',
     styl: relativeSrcPath + '/styl/**',
-    www: relativeSrcPath + '/www/index.html'
+    www: relativeSrcPath + '/www/**'
   }
 
 }
