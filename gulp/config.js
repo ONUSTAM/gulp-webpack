@@ -28,6 +28,7 @@ module.exports = {
       extensions: ['', '.js']
     },
     module:  {
+      noParse: /es6-promise\.js$/,
       loaders: [
         {
           test: /\.js?$/,
