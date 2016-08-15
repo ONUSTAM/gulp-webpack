@@ -1,15 +1,34 @@
 <template lang="html">
   <div id="headerNav">
 
-    <a
-      v-bind:class="{'active': $route.path === '/' }"
-      v-link="{ path: '/' }"
-      >top</a>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            graminume
+          </a>
+        </div>
+      </div>
+    </nav>
 
-    <a
-      v-bind:class="{'active': $route.path === '/List' }"
-      v-link="{ path: '/List' }"
-      >list</a>
+
+
+    <ul>
+      <li>
+        <a
+          v-bind:class="{'active': $route.path === '/' }"
+          v-link="{ path: '/' }"
+          >top</a>
+
+      </li>
+      <li>
+        <a
+          v-bind:class="{'active': $route.path === '/List' }"
+          v-link="{ path: '/List' }"
+          >list</a>
+
+      </li>
+    </ul>
 
   </div>
 </template>

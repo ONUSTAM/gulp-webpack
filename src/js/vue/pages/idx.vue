@@ -1,5 +1,9 @@
 <template lang="html">
-  index
+  <div>
+    <p>
+      <span class="glyphicon glyphicon-cloud"></span> index
+    </p>
+  </div>
 </template>
 
 <script>
