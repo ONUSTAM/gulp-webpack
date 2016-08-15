@@ -9,7 +9,7 @@
 <script>
 
 export default {
-  name: 'Idx',
+  name: 'Index',
   data: function () {
     return {
     }

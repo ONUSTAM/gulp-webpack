@@ -13,14 +13,14 @@ module.exports = {
   dest: dest,
   // jsのビルド設定
   js: {
-    src: src + '/js/**',
-    dest: dest + '/js',
+    src: src + '/scripts/**',
+    dest: dest + '/scripts',
     uglify: false
   },
 
   // webpackの設定
   webpack: {
-    entry: src + '/js/app.js',
+    entry: src + '/scripts/app.js',
     output: {
       filename: 'app.js'
     },
@@ -96,7 +96,7 @@ module.exports = {
   },
 
   watch: {
-    js: relativeSrcPath + '/js/**',
+    js: relativeSrcPath + '/scripts/**',
     styl: relativeSrcPath + '/styl/**',
     www: relativeSrcPath + '/www/**'
   }
