@@ -30,6 +30,7 @@ module.exports = {
     module:  {
       noParse: /es6-promise\.js$/,
       loaders: [
+        { test: /\.vue$/, loader: 'vue' },
         {
           test: /\.js?$/,
           exclude: /(node_modules|bower_components)/,
