@@ -3,6 +3,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../css/app.css'
 
+
 import 'bootstrap'
 import 'bootstrap-datepicker'
 
@@ -12,7 +13,7 @@ import $ from 'jquery'
 import _ from 'lodash'
 
 import Foundation from './vue/foundation.vue'
-import Idx from './vue/pages/idx.vue'
+import Index from './vue/pages/index.vue'
 import List from './vue/pages/list.vue'
 
 Vue.component('Foundation', Foundation)
@@ -22,7 +23,7 @@ var router = new VueRouter();
 
 router.map({
   '/': {
-    component: Idx
+    component: Index
   },
   '/List': {
     component: List

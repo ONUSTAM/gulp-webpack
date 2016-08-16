@@ -1,11 +1,15 @@
 <template lang="html">
-  index
+  <div>
+    <p>
+      <span class="glyphicon glyphicon-cloud"></span> index
+    </p>
+  </div>
 </template>
 
 <script>
 
 export default {
-  name: 'Idx',
+  name: 'Index',
   data: function () {
     return {
     }
