@@ -6,7 +6,7 @@ var relativeSrcPath = path.relative('.', src);  // 追記(watch)
 
 var webpack = require('webpack');
 var BowerWebpackPlugin = require("bower-webpack-plugin");
-var poststylus = require('poststylus');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 module.exports = {
 
   // 出力先の指定
@@ -51,13 +51,6 @@ module.exports = {
       ]
     },
     plugins: [
-      // new BrowserSyncPlugin({
-      //   // browse to http://localhost:3000/ during development,
-      //   // ./public directory is being served
-      //   host: 'localhost',
-      //   port: 3000,
-      //   server: { baseDir: ['public'] }
-      // }),
       new BowerWebpackPlugin({
         modulesDirectories: ["bower_components"],
         manifestFiles:      "bower.json",
@@ -68,22 +61,25 @@ module.exports = {
       new webpack.ProvidePlugin({
         $:      "jquery",
         jQuery: "jquery"
+      }),
+      new BrowserSyncPlugin({
+        // browse to http://localhost:3000/ during development,
+        // ./public directory is being served
+        host: 'localhost',
+        port: 3000,
+        files: "./build/**/*",
+        server: {
+          "baseDir": "./build",
+          "middleware": function(req, res, next){
+            var timestamp = "[" + new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '') + "] ";
+            console.log(timestamp + req.method + " " + req.originalUrl + " - " +  req.connection.remoteAddress + " - " + req.headers['user-agent']);
+            next();
+          }
+        }
       })
     ]
   },
 
-  // 追記部分
-  // stylus: {
-  //   src: [  // もし外部のcssフレームワーク使うなら配列の先頭で読み込むと良い
-  //     src + '/styl/**/!(_)*'  // ファイル名の先頭がアンスコはビルド対象外にする
-  //   ],
-  //   dest: src + '/css/',
-  //   output: 'app.css',  // 出力ファイル名
-  //   autoprefixer: {
-  //     browsers: ['last 2 versions']
-  //   },
-  //   minify: false
-  // },
 
   // 追記部分
   copy: {

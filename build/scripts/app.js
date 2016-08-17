@@ -43275,7 +43275,7 @@
 
 
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 	// exports
 
@@ -43305,7 +43305,7 @@
 /* 38 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div>\n  <p>\n    <span class=\"glyphicon glyphicon-cloud\"></span> index\n  </p>\n</div>\n";
+	module.exports = "\n<div>\n  <p class=\"text-center\">\n    <span class=\"glyphicon glyphicon-cloud\"></span> index\n  </p>\n  <!-- cdsacdsamckdlsam -->\n</div>\n";
 
 /***/ },
 /* 39 */

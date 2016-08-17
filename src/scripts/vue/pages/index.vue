@@ -1,8 +1,9 @@
 <template lang="html">
   <div>
-    <p>
+    <p class="text-center">
       <span class="glyphicon glyphicon-cloud"></span> index
     </p>
+    <!-- cdsacdsamckdlsam -->
   </div>
 </template>
 
