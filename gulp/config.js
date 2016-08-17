@@ -6,7 +6,7 @@ var relativeSrcPath = path.relative('.', src);  // 追記(watch)
 
 var webpack = require('webpack');
 var BowerWebpackPlugin = require("bower-webpack-plugin");
-
+var poststylus = require('poststylus');
 module.exports = {
 
   // 出力先の指定
@@ -20,17 +20,26 @@ module.exports = {
 
   // webpackの設定
   webpack: {
+    watch: true,
     entry: src + '/scripts/app.js',
     output: {
       filename: 'app.js'
     },
     resolve: {
-      extensions: ['', '.js']
+      extensions: ['', '.js', '.styl']
     },
     module:  {
       noParse: /es6-promise\.js$/,
       loaders: [
         { test: /\.vue$/, loader: 'vue' },
+        // { test: /\.js$/, include: [path.resolve(__dirname, 'src')], loader: 'babel' },
+        { test: /\.css$/, loader: 'style-loader!css-loader' },
+        { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
+        { test: /\.svg$/, loader: 'url-loader?mimetype=image/svg+xml' },
+        { test: /\.woff$/, loader: 'url-loader?mimetype=application/font-woff' },
+        { test: /\.woff2$/, loader: 'url-loader?mimetype=application/font-woff' },
+        { test: /\.eot$/, loader: 'url-loader?mimetype=application/font-woff' },
+        { test: /\.ttf$/, loader: 'url-loader?mimetype=application/font-woff' },
         {
           test: /\.js?$/,
           exclude: /(node_modules|bower_components)/,
@@ -38,14 +47,7 @@ module.exports = {
           query: {
             cacheDirectory: true
           }
-        },
-        // { test: /\.js$/, include: [path.resolve(__dirname, 'src')], loader: 'babel' },
-        { test: /\.css$/, loader: 'style-loader!css-loader' },
-        { test: /\.svg$/, loader: 'url-loader?mimetype=image/svg+xml' },
-        { test: /\.woff$/, loader: 'url-loader?mimetype=application/font-woff' },
-        { test: /\.woff2$/, loader: 'url-loader?mimetype=application/font-woff' },
-        { test: /\.eot$/, loader: 'url-loader?mimetype=application/font-woff' },
-        { test: /\.ttf$/, loader: 'url-loader?mimetype=application/font-woff' }
+        }
       ]
     },
     plugins: [
@@ -71,17 +73,17 @@ module.exports = {
   },
 
   // 追記部分
-  stylus: {
-    src: [  // もし外部のcssフレームワーク使うなら配列の先頭で読み込むと良い
-      src + '/styl/**/!(_)*'  // ファイル名の先頭がアンスコはビルド対象外にする
-    ],
-    dest: src + '/css/',
-    output: 'app.css',  // 出力ファイル名
-    autoprefixer: {
-      browsers: ['last 2 versions']
-    },
-    minify: false
-  },
+  // stylus: {
+  //   src: [  // もし外部のcssフレームワーク使うなら配列の先頭で読み込むと良い
+  //     src + '/styl/**/!(_)*'  // ファイル名の先頭がアンスコはビルド対象外にする
+  //   ],
+  //   dest: src + '/css/',
+  //   output: 'app.css',  // 出力ファイル名
+  //   autoprefixer: {
+  //     browsers: ['last 2 versions']
+  //   },
+  //   minify: false
+  // },
 
   // 追記部分
   copy: {

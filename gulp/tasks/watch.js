@@ -10,9 +10,9 @@ gulp.task('watch', function () {
     });
 
     // styl
-    watch(config.styl, function () {
-        gulp.start(['stylus']);
-    });
+    // watch(config.styl, function () {
+    //     gulp.start(['stylus']);
+    // });
 
     // www
     watch(config.www, function () {

@@ -1,10 +1,11 @@
 // @file app.js
-
+console.log('hello!!!!');
 import 'bootstrap/dist/css/bootstrap.css'
-import '../css/app.css'
-
-
+import '../styl/app.styl'
 import 'bootstrap'
+
+
+
 import 'bootstrap-datepicker'
 
 import Vue from 'vue'

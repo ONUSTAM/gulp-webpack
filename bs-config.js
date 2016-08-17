@@ -20,7 +20,7 @@ module.exports = {
         }
     },
     //"files": false,
-     "files": "./webroot/**/*",
+     "files": "./build/**/*",
     "watchOptions": {},
     // "server": false,
     "server": {
