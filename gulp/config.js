@@ -32,7 +32,6 @@ module.exports = {
       noParse: /es6-promise\.js$/,
       loaders: [
         { test: /\.vue$/, loader: 'vue' },
-        // { test: /\.js$/, include: [path.resolve(__dirname, 'src')], loader: 'babel' },
         { test: /\.css$/, loader: 'style-loader!css-loader' },
         { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
         { test: /\.svg$/, loader: 'url-loader?mimetype=image/svg+xml' },
