@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="foundation">
-    <header-nav></header-nav>
+    <site-header></site-header>
 
     <router-view
       keep-alive
@@ -9,7 +9,13 @@
   </div>
 </template>
 <script>
-import HeaderNav from '../vue/com/headerNav.vue'
+import SiteHeader from '../vue/com/siteHeader.vue'
+// import ApiClient from '../mod/apiClient.js'
+// var apiClient = new ApiClient();
+
+import ApiClient from 'babel!../mod/ApiClient.js'
+var apiClient = new ApiClient('Tom');
+console.log(apiClient.eat('beeeeeeeeef'));
 
 export default {
   name: 'Foundation',
@@ -22,7 +28,7 @@ export default {
   attached: function () {},
   methods: {},
   components: {
-    HeaderNav
+    SiteHeader
   }
 }
 </script>

@@ -31,14 +31,15 @@ module.exports = {
     module:  {
       noParse: /es6-promise\.js$/,
       loaders: [
-        { test: /\.vue$/, loader: 'vue' },
-        { test: /\.css$/, loader: 'style-loader!css-loader' },
-        { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
-        { test: /\.svg$/, loader: 'url-loader?mimetype=image/svg+xml' },
-        { test: /\.woff$/, loader: 'url-loader?mimetype=application/font-woff' },
+        { test: /\.vue$/,   loader: 'vue' },
+        { test: /\.html$/,  loader: "html" },
+        { test: /\.css$/,   loader: 'style-loader!css-loader' },
+        { test: /\.styl$/,  loader: 'style-loader!css-loader!stylus-loader' },
+        { test: /\.svg$/,   loader: 'url-loader?mimetype=image/svg+xml' },
+        { test: /\.woff$/,  loader: 'url-loader?mimetype=application/font-woff' },
         { test: /\.woff2$/, loader: 'url-loader?mimetype=application/font-woff' },
-        { test: /\.eot$/, loader: 'url-loader?mimetype=application/font-woff' },
-        { test: /\.ttf$/, loader: 'url-loader?mimetype=application/font-woff' },
+        { test: /\.eot$/,   loader: 'url-loader?mimetype=application/font-woff' },
+        { test: /\.ttf$/,   loader: 'url-loader?mimetype=application/font-woff' },
         {
           test: /\.js?$/,
           exclude: /(node_modules|bower_components)/,
@@ -59,16 +60,17 @@ module.exports = {
       }),
       new webpack.ProvidePlugin({
         $:      "jquery",
-        jQuery: "jquery"
+        jQuery: "jquery",
+        'window.jQuery': 'jquery'
       }),
       new BrowserSyncPlugin({
         // browse to http://localhost:3000/ during development,
         // ./public directory is being served
         host: 'localhost',
         port: 3000,
-        files: "./build/**/*",
+        files: dest + "/**/*",
         server: {
-          "baseDir": "./build",
+          "baseDir": dest,
           "middleware": function(req, res, next){
             var timestamp = "[" + new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '') + "] ";
             console.log(timestamp + req.method + " " + req.originalUrl + " - " +  req.connection.remoteAddress + " - " + req.headers['user-agent']);
@@ -84,18 +86,15 @@ module.exports = {
   copy: {
     src: [   // 今後ただコピーするファイルが増えそうなので配列にしておく
       src + '/favicon.ico',
-      // src + '/www/index.html',
-      // src + '/www/3.html',
-      // src + '/www/7.html'
       src + '/www/**'
     ],
     dest: dest
   },
 
   watch: {
-    js: relativeSrcPath + '/scripts/**',
-    styl: relativeSrcPath + '/styl/**',
-    www: relativeSrcPath + '/www/**'
+    // js: relativeSrcPath + '/scripts/**',
+    // styl: relativeSrcPath + '/styl/**',
+    // www: relativeSrcPath + '/www/**'
   }
 
 }
