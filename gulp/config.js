@@ -34,6 +34,15 @@ module.exports = {
     dest: dest
   },
 
+  // jade
+  jade: {
+    src: [
+      src + '/www/**/*.jade',
+      '!' + src + '/www/**/_*.jade'
+    ],
+    dest: dest
+  },
+
   // 追記部分
   stylus: {
     src: [  // もし外部のcssフレームワーク使うなら配列の先頭で読み込むと良い
@@ -50,7 +59,8 @@ module.exports = {
   watch: {
     js: relativeSrcPath + '/js/**',
     styl: relativeSrcPath + '/styl/**',
-    www: relativeSrcPath + '/www/index.html'
+    www: relativeSrcPath + '/www/index.html',
+    jade: relativeSrcPath + '/www/**/*.jade'
   }
 
 }
