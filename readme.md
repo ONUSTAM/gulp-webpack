@@ -1,14 +1,21 @@
 # gulp + webpack + browser-sync + vue
 
-参照<br>
-http://yutapon.hatenablog.com/entry/2014/12/06/123000
-
-https://saku.io/move-from-webpack-dev-server-to-browser-sync/
-
 ## 起動方法
+    $ gulp
 
-gulp
 
-+
+### 最近のhtml + css + javascriptの開発
+nodejsを使った開発環境<br>
+・githubから開発に必要なプラグインをダウンロードする<br>
+・gulp、gruntを使った開発ビルド、リリースビルド
 
-browser-sync start --config bs-config.js
+### browser-sync
+ローカルサーバーを起動すると同じネットワークにいたらシンクロする
+
+### cssはsass、stylusなどのcssビルドツールを使う
+管理がしやすいように！
+
+### es6対応
+
+シングルページアプリケーション
+### vuejs

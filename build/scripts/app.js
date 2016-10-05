@@ -42652,7 +42652,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-304b380f/foundation.vue"
+	  var id = "_v-1d879c42/foundation.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -42717,7 +42717,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-7f9713de/siteHeader.vue"
+	  var id = "_v-1a5fb2de/siteHeader.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -42835,7 +42835,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-0b59281b/index.vue"
+	  var id = "_v-74ad6b70/index.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -42878,7 +42878,7 @@
 
 
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 	// exports
 
@@ -43130,7 +43130,7 @@
 /* 37 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"container\">\n\n  <h1 class=\"text-center\">\n    <strong>\n      Gulp + WebPack + Vue\n    </strong>\n  </h1>\n  <br>\n\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n      devDependencies\n    </div>\n    <div class=\"panel-body\">\n      <table class=\"table\">\n        <tr>\n          <td>browser-sync</td>\n        </tr>\n        <tr>\n          <td>babel</td>\n        </tr>\n        <tr>\n          <td>bootstrap</td>\n        </tr>\n        <tr>\n          <td>lodash</td>\n        </tr>\n        <tr>\n          <td>stylus</td>\n        </tr>\n      </table>\n    </div>\n  </div>\n  <br>\n\n  <label>Start</label>\n  <pre>$ gulp</pre>\n\n</div>\n";
+	module.exports = "\n<div class=\"container\">\n  <h1 class=\"text-center\">\n    <strong>\n      {{ message }}\n    </strong>\n  </h1>\n  <br>\n  <div class=\"row\">\n    <p class=\"col-xs-4\"></p>\n    <p class=\"col-xs-4\">\n      <input type=\"text\" name=\"name\" class=\"form-control\" style=\"\" value=\"Gulp + WebPack + Vue\" v-model=\"message\">\n    </p>\n    <p class=\"col-xs-4\"></p>\n  </div>\n  <br>\n\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n      devDependencies\n    </div>\n    <div class=\"panel-body\">\n      <table class=\"table\">\n        <tr>\n          <td>browser-sync</td>\n        </tr>\n        <tr>\n          <td>babel</td>\n        </tr>\n        <tr>\n          <td>bootstrap</td>\n        </tr>\n        <tr>\n          <td>lodash</td>\n        </tr>\n        <tr>\n          <td>stylus</td>\n        </tr>\n      </table>\n    </div>\n  </div>\n  <br>\n\n  <label>Start</label>\n  <pre>$ gulp</pre>\n\n</div>\n";
 
 /***/ },
 /* 38 */
@@ -43152,7 +43152,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-7317e465/list.vue"
+	  var id = "_v-60544898/list.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -43221,7 +43221,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-3f1ebd8b/form.vue"
+	  var id = "_v-2c5b21be/form.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {

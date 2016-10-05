@@ -1,11 +1,18 @@
 <template lang="html">
   <div class="container">
-
     <h1 class="text-center">
       <strong>
-        Gulp + WebPack + Vue
+        {{ message }}
       </strong>
     </h1>
+    <br>
+    <div class="row">
+      <p class="col-xs-4"></p>
+      <p class="col-xs-4">
+        <input type="text" name="name" class="form-control" style="" value="Gulp + WebPack + Vue" v-model="message">
+      </p>
+      <p class="col-xs-4"></p>
+    </div>
     <br>
 
     <div class="panel panel-default">
